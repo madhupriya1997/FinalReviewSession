@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+  .container input, .container select {
+    border: 0px;
+    border-bottom: 2px solid black;
+    margin: 10px;
+    padding: 5px; }
+
+.Incontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 1.5px gray;
+  border: 1px solid gainsboro;
+  margin: 20px 150px;
+  width: 850px; }
+  .Incontainer .contain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+    .Incontainer .contain input, .Incontainer .contain select {
+      border: 0px;
+      border-bottom: 2px solid black;
+      margin: 10px;
+      padding: 5px; }
+
+button {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer; }
+
+/* Darker background on mouse-over */
+button:hover {
+  background-color: black;
+  color: white; }
+
+.option {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row; }
+  .option button {
+    margin-left: 10px; }
+
+/*# sourceMappingURL=create.css.map */

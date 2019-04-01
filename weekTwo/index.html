@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="scss/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="top-header">
+            <div>
+               <h3></h3>
+            </div>
+            <div>
+                <nav class="navClass">
+                    <ul>
+                        <li id="homeMenu">Home</li>
+                        <li>Blogs
+                            <ul class="sub-menu">
+                                <li onclick="filter('Travel')">Travel</li>
+                                <li onclick="filter('Entertainment')">Entertainment</li>
+                                <li onclick="filter('Food')">Food</li>
+                            </ul>
+                        </li>
+                        <li id="loginMenu">Login</li>
+                        <li id="signinMenu">Signin</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="form">
+        <div class="modal modal--hidden">
+                <div class="modal__contents">
+                  <div class="modal__close-bar">
+                    <span id="cancel">X</span>
+                  </div>
+                  <h2 style="text-align: center;">Let's make Everything oficial</h2>
+                  <form  class="container" id="loginForm">
+                        <!--<label>Email</label>-->
+                        <input type="email" name="Email" placeholder="Email" id="login_email">
+                        <!--<label>Password</label>-->
+                        <input type = "password" name="password" placeholder="password" id="login_passwd">
+                        <button id="login" class="submit">Login</button>
+                     <!--<button id="signin">Signin</button>-->
+                    </form>
+                    <form  class="container" id="signinForm">
+                            <!--<label>Name</label>-->
+                            <input type="text" name="Name" placeholder="Name" id="name" required>
+                            <!--<label>Email</label>-->
+                            <input type="email" name="Email" placeholder="Email" id="email" required>
+                            <!--<label>Password</label>-->
+                            <input type = "password" name="password" placeholder="password" id="passwd" required>
+                            <!--<label>Confirm Password</label>-->
+                            <input type = "password" name="cpassword" placeholder="Confirm password" id="cpasswd" required>
+                          <!--  <button id="login">Login</button>-->
+                            <button id="signin" class="submit">Signin</button>
+                        </form> 
+                </div>
+              </div>
+        </section>
+        <section id="home">
+        <h2>Recent Posts<hr/></h2>
+        <section class="boo">
+            <div id="sec1">
+
+            </div>
+        </section>
+    </section>
+    <section id="cat1">
+            <h2 id="type"></h2><hr/>
+            <section class="boo">
+                <div id="sec2">
+    
+                </div>
+            </section>
+        </section>
+        <footer>
+                <div class="copyright">
+                        <p>© All rights reserved | Blog Post</p>
+                        <ul class="contact">
+                                <li> 
+                                        <a href="#" class="fab fa-twitter"> 
+                                            <span>Twitter</span> 
+                                        </a> 
+                                    </li> 
+                                      
+                                    <li> 
+                                        <a href="#" class="fab fa-facebook-f"> 
+                                            <span>Facebook</span> 
+                                        </a> 
+                                    </li> 
+                                      
+                                    <li> 
+                                        <a href="#" class="fa fa-rss"> 
+                                            <span>Pinterest</span> 
+                                        </a> 
+                                    </li> 
+                        </ul>
+                    </div>
+        </footer>
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+        <script src="js/index1.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="scss/style.css">
+        <link rel="stylesheet" href="scss/create.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="top-header">
+            <div>
+               <h1></h1>
+            </div>
+            <div>
+                <nav class="navClass">
+                    <ul>
+                        <li id="homeMenu">Home</li>
+                        <li>Account
+                            <ul class="sub-menu">
+                                <li id="info"></li>
+                                <li id="logout" onclick="info()">Logout</li>
+                            </ul>
+                        </li>
+                        <li>Blogs
+                            <ul class="sub-menu">
+                                <li id="travel" onclick="filter('Travel')">Travel</li>
+                                <li id="Entertainment" onclick="filter('Entertainment')">Entertainment</li>
+                                <li id="Food" onclick="filter('Food')">Food</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="home">
+        <div class="option">
+        <h2>Recent Posts</h2>
+        <div>
+        <button onclick="window.location.href='create.html'"><i class="far fa-plus-square"></i>create</button>
+        <button onclick="window.location.href='edit.html'"><i class="far fa-edit"></i>Edit</button>
+    </div>
+    </div><hr/>
+        <section class="boo">
+            <div id="sec1">
+
+            </div>
+        </section>
+    </section>
+    <section id="cat1">
+            <div class="option">
+                    <h2 id="type"></h2>
+                    <div>
+                    <button onclick="window.location.href='create.html'"><i class="far fa-plus-square"></i>create</button>
+                    <button onclick="window.location.href='edit.html'"><i class="far fa-edit"></i>Edit</button>
+                </div>
+                </div><hr/>
+        <section class="boo">
+            <div id="sec2">
+
+            </div>
+        </section>
+    </section>
+    <footer>
+            <div class="copyright">
+                    <p>© All rights reserved | Blog Post</p>
+                    <ul class="contact">
+                            <li> 
+                                    <a href="#" class="fab fa-twitter"> 
+                                        <span>Twitter</span> 
+                                    </a> 
+                                </li> 
+                                  
+                                <li> 
+                                    <a href="#" class="fab fa-facebook-f"> 
+                                        <span>Facebook</span> 
+                                    </a> 
+                                </li> 
+                                  
+                                <li> 
+                                    <a href="#" class="fa fa-rss"> 
+                                        <span>Pinterest</span> 
+                                    </a> 
+                                </li> 
+                    </ul>
+                </div>
+    </footer>
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+        <script src="js/logout.js"></script>
+        <script src="js/fetch.js"></script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<hmtl>
+        <head>
+            <title>Edit</title>
+            <link rel="stylesheet" href="scss/create.css">
+            <link rel="stylesheet" href="scss/style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </head>
+        <body>
+                <section id="form">
+                        <div class="modal modal--hidden">
+                                <div class="modal__contents">
+                                  <div class="modal__close-bar">
+                                    <span id="cancel" onclick="window.location.href='home.html'">X</span>
+                                  </div>
+                                  <h2 style="text-align: center;">Post Details</h2>
+                                  <form  class="container" id="editForm">
+                                      <input type="text" name="title" placeholder="Title" id="E_title" required="">
+                                      <input type="text" name="author" placeholder="Author" id="E_author" required="">
+                                      <select id="E_category" required="">
+                                            <option selected="selected" disabled="disabled">Select</option>
+                                            <option value="Travel">Travel</option>
+                                            <option value="Entertainment">Entertainment</option>
+                                            <option value="Food">Food</option>
+                                        </select>
+                                        <input type="submit" id="edit" class="submit" value="submit">
+                                    </form>
+                                </div>
+                              </div>
+                        </section>
+            <section class="Incontainer">
+                 <div class="modal__close-bar">
+                    <span id="close" onclick="window.location.href='home.html'">X</span>
+                 </div>
+                <div>
+                    <h2>Edit details</h2>
+                </div>
+                    <form class="container" id="post">
+                        <input type="text" placeholder="Title" id="title" required="">
+                        <input type="text" placeholder="short Description" id="shortDescription" required="">
+                        <div>
+                            <input type="file" placeholder="Cover Image" id="coverImage" accept="image/*" required="">
+                            <popup-info img="js/img/alt.png" data-text="Upload in jpg format."></popup-info>
+                        </div>
+                        <select id="category" required="">
+                            <option selected="selected" disabled="disabled">Select</option>
+                            <option value="Travel">Travel</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Food">Food</option>
+                        </select>
+                        <input type="text" placeholder="author" id="author" required="">
+                        <textarea name="body" form="post" id="content" rows="30" cols="100" placeholder="Enter you content" required=""></textarea>
+                        <input type="submit" value="submit">
+                    </form>
+            </section>
+    
+            <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+            <script src="js/edit.js"></script>
+            <script src="js/logout.js"></script>
+            <script src="js/shadowDom.js"></script>
+        </body>
+    </hmtl>
